@@ -43,5 +43,3 @@ jobs:
       - name: Run tests
         run: swift test
         
-        
-        python -m pytest addition.py
