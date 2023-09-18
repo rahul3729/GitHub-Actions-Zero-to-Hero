@@ -26,11 +26,11 @@ jobs:
       run: 
       |
       jobs:
-  build:
-    name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest]
+        build:
+            name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
+             strategy:
+                matrix:
+                   os: [ubuntu-latest, macos-latest]
         swift: ["5.2", "5.3"]
     runs-on: ${{ matrix.os }}
     steps:
